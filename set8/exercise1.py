@@ -210,12 +210,19 @@ def random_filler_text(number_of_words=200) -> str:
 
 
 def fast_filler(number_of_words=200) -> str:
-    """Makes filler text, but really fast.
+    """Make a paragraph of random filler text, but really fast.
 
-    This time, the first time the code runs, save the dictionary returned
+    Make a paragraph of text using randomly picked words. Each word should 
+    be a random length, and a random one of the words.
+    Make the paragraph have number_of_words words in it.
+    Make the paragraph pretty, give the first word a capital letter and make
+    it end in a full-stop.
+
+    The first time the code runs, save the dictionary returned
     from make_filler_text_dictionary to a file.
     On the second run, if the file already exists use it instead of going to
     the internet.
+
     Use the filename "dict_cache.json"
     TIP: you'll need the os and json libraries
     TIP: you'll probably want to use json dumps and loads to get the
